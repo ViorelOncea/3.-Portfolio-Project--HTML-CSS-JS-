@@ -1,0 +1,286 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--font-color);
+  font-size: 18px;
+  
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #5d2f2f;
+
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Rokkitt", serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+  text-align: center;
+  font-size: 35px;
+}
+
+div .about-me-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+body {
+  font-family: "Rokkitt", serif;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #84bfa9b3;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  font-size: 22px;
+}
+
+.navigation-item {
+  margin: var(--spacing-1);
+}
+
+.navigation-items li {
+  margin-left: 15px;
+}
+
+.portrait {
+  width: 300px;
+  height: 450px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin-top: 1em;
+}
+
+.about-me-container {
+  display: flex;
+}
+
+.about-me-text-container {
+  margin-right: var(--spacing-3);
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+details {
+  cursor: pointer;
+  text-align: center;
+}
+
+summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+footer {
+  margin-top: auto;
+  padding: var(--spacing-2) 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+section {
+  padding: var(--spacing-3) 0;
+  margin-top: 25px;
+}
+
+.icon {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact div {
+  text-align: center;
+}
+
+#logo {
+  margin: 0;
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+
+#contact-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Skills logos */
+
+.html {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/64px-HTML5_logo_and_wordmark.svg.png);
+}
+
+.css {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/64px-CSS3_logo_and_wordmark.svg.png);
+}
+
+.js {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/64px-Javascript_badge.svg.png);
+}
+
+.react {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/64px-React_Logo_SVG.svg.png);
+}
+
+.git {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/64px-Git-logo.svg.png);
+}
+
+.node {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/64px-Node.js_logo_2015.svg.png);
+}
+
+.github {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png);
+}
+
+.linkedin-icon {
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png);
+}
+
+#contact .github {
+  margin-top: 10px;
+}
+
+/* Interactive words styling */
+
+.interactive {
+  font-style: italic;
+  text-decoration: underline;
+  color: #411b89;
+}
+
+.indication {
+  font-style: italic;
+  color: #893e1b;
+}
+
+.display-none {
+  display: none;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+  .portrait {
+    width: 224px;
+    height: 250px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .navigation-items li {
+    margin-left: 2px;
+    font-size: 20px;
+  }
+  .navigation-items {
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 120px;
+  }
+  .project-image {
+    width: 100%;
+  }
+  #skills-container > * {
+    margin-left: 40px;
+    margin-top: 24px;
+  }
+  #contact-container {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  .navigation-items {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .navigation-items li {
+    margin-left: 5px;
+  }
+  .project-image {
+    width: 70%;
+  }
+  body {
+    max-width: 88%;
+  }
+  #skills-container > * {
+    margin-left: 24px;
+  }
+}
