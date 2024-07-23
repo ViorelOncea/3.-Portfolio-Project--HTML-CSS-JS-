@@ -10,4 +10,4 @@ This is the source code for my portfolio website, which I built to showcase what
 
 ## Demo
 
-You can visit the website by going *[here]*(https://viorelonceapersonalportfolio.netlify.app/).
+You can visit the website by going [here](https://viorelonceapersonalportfolio.netlify.app/).
